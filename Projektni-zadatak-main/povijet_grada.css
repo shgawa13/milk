@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 100%;
+}
+/*pozadinska slika*/
+#container{
+    margin: 0;
+    display: grid;
+    grid-auto-rows: 109px;
+    grid-auto-columns: 218px;
+    background-color:rgb(53, 53, 53) ;
+    
+    
+}
+/*zaglavlje , linkovi i naslov*/
+#zaglavlje{
+    grid-area: 1/1/2/10;
+    display:    grid;
+    grid-auto-rows: 109px;
+    grid-template-columns: repeat( 9, 218px);
+    align-items: center;
+    background-color:black;
+}
+.naslov{
+    grid-area: 1/2/2/4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(29, 28, 28) ;
+    color: white;
+    border-radius: 20px;
+}
+.naslov:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.maglaj{
+    font-size:xx-large;
+}
+.links{
+    grid-area: 1/6/2/9;
+    background-color: rgb(29, 28, 28) ;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 81px;
+    text-decoration: none;
+}
+.links:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#sadrzaj{
+    grid-area: 3/2/20/9;
+    display: grid;
+    grid-auto-rows: 72.6px;
+    grid-template-columns:repeat(20 , 65.4px) ;
+    grid-gap: 10px;
+}
+
+/*Kontakti copyrights prava i podnozje*/
+#footer{
+    background-color:black;
+    grid-area: 21/1/23/10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.copyrights, .kontakti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(29, 28, 28, 0.637) ;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+    height: 180px;
+    width: 330px;
+    text-align: center;
+    
+}
+.kontakti li {
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.con1{
+    grid-area: 2/2/4/7;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+

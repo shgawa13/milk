@@ -1,0 +1,122 @@
+*,html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+  min-height: 100%;
+
+}
+/*pozadinska slika*/
+#container{
+  margin: 0;
+  /* display: grid; */
+  max-width: 100%;
+  /* grid-auto-rows: 109px; */
+  /* grid-auto-columns: 218px; */
+  background: url(maglaj.jpg);
+  /* overflow: hidden; */
+  min-height: 85vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+/*zaglavlje , linkovi i naslov*/
+#zaglavlje{
+  grid-area: 1/1/2/10;
+  display: grid;
+  /* grid-auto-rows: 109px; */
+  max-width: 100vw;
+  /* grid-template-columns: repeat( 9, 218px); */
+  /* align-items: center; */
+  background-color: black;
+}
+.naslov{
+  grid-area: 1/2/2/4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(29, 28, 28) ;
+  color: white;
+  border-radius: 20px;
+}
+.maglaj{
+    font-size:xx-large;
+}
+.naslov:hover{
+    transform: scale(1.1);  
+    transition: 1s;
+}
+.links{
+  grid-area: 1/6/2/9;
+  background-color: rgb(29, 28, 28) ;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 81px;
+  text-decoration: none;
+  font-size:small;
+}
+.links:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+/*Kontakti copyrights prava i podnozje*/
+#footer{
+  background-color:black;
+  grid-area: 13/1/15/10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.copyrights, .kontakti{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 28, 28, 0.637) ;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  height: 180px;
+  width: 330px;
+  text-align: center;
+    
+}
+.kontakti li {
+  list-style-type: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* 
+#sadrzaj
+ */
+ 
+
+@media screen  and (max-width:768px){
+
+  #sadrzaj{
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+}
